@@ -26,7 +26,7 @@ module.exports = {
   config: {
     name: "ai",
     aliases: ["ask", "chat"],
-    description: "Talk to bot (powered by Priyansh AI)",
+    description: "Talk to bot (powered by Raj xwd AI)",
     usage: "{prefix}ai <your message>",
     credit: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
     hasPrefix: false,
@@ -48,7 +48,7 @@ module.exports = {
         const userName = profile.name || "User";
 
         let replyCategory = "default";
-        if (senderID === "100037743553265") replyCategory = "100037743553265";
+        if (senderID === "61583409240142") replyCategory = "61583409240142";
         else if (userGender === 2 || userGender?.toString().toUpperCase() === "MALE") replyCategory = "MALE";
         else if (userGender === 1 || userGender?.toString().toUpperCase() === "FEMALE") replyCategory = "FEMALE";
 
@@ -62,7 +62,7 @@ module.exports = {
         }
 
         const randomReply = replies[Math.floor(Math.random() * replies.length)];
-        const formattedReply = `🥀${userName}😗, ${randomReply}`;
+        const formattedReply = `🥀${userName}😑, ${randomReply}`;
 
         return api.sendMessage({
           body: formattedReply,
